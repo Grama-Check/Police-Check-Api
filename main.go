@@ -2,6 +2,7 @@ package main
 
 import (
 	"Police-Check-Api/handler"
+	"Police-Check-Api/middleware"
 
 	"github.com/gin-gonic/gin"
 )
@@ -9,9 +10,9 @@ import (
 func main() {
 	r := gin.Default()
 
-	authGroup := r.Group("/")
+	authGroup := r.Group("/").Use(middleware.AuthMiddleware())
 
 	authGroup.POST("/", handler.PoliceCheck)
 
-	r.Run("6060")
+	r.Run(":6060")
 }
