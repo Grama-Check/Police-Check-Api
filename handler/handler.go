@@ -13,14 +13,23 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var queries *db.Queries
 var config util.Config
+var conn *sql.DB
 
 func init() {
 	var err error
+
 	config, err = util.LoadConfig(".")
+
 	if err != nil {
 		log.Fatal("Cannot load config")
+
+	}
+	conn, err = sql.Open(config.DBDriver, config.DBSource)
+
+	if err != nil {
+		log.Println("HELP")
+		return
 	}
 }
 
@@ -34,19 +43,14 @@ func PoliceCheck(c *gin.Context) {
 		c.AbortWithStatusJSON(http.StatusBadRequest, "Couldn't parse request body to json")
 	}
 
-	conn, err := sql.Open(config.DBDriver, config.DBSource)
-	err2 := conn.Ping()
-
-	if err != nil || err2 != nil {
+	if err := conn.Ping(); err != nil {
 		c.AbortWithStatusJSON(http.StatusInternalServerError, "Cannot connect to database")
 		return
 	}
 
-	queries = db.New(conn)
+	queries := db.New(conn)
 
-	var i db.Resident
-
-	i, err = queries.GetResident(ctx, resident.NIC)
+	i, err := queries.GetResident(ctx, resident.NIC)
 
 	clear := err == nil
 
@@ -61,7 +65,7 @@ func PoliceCheck(c *gin.Context) {
 	c.JSON(
 		http.StatusOK,
 		gin.H{
-			"uid":   resident.NIC,
+			"nic":   resident.NIC,
 			"clear": clear,
 		},
 	)

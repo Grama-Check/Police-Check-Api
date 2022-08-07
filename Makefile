@@ -8,10 +8,10 @@ dropdb:
 	docker exec -it policedb dropdb --username=root --owner=root police_db
 
 migrateup:
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5002/police_db?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://policeadmin:pcheck@123@policecheckserver.postgres.database.azure.com/police_db?sslmode=require" -verbose up
 
 migratedown:
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5002/police_db?sslmode=disable" -verbose down
+	migrate -path db/migration -database "postgresql://policeadmin:pcheck@123@policecheckserver.postgres.database.azure.com/police_db?sslmode=require" -verbose down
 
 sqlc:
 	sqlc generate
