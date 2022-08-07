@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Aug  4 08:11:40 2022
+# Make data base, printed on Sat Aug  6 20:02:01 2022
 
 # Variables
 
@@ -43,13 +41,13 @@ CURDIR := /home/wso2/Desktop/Police-Check-Api
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/102
+SNAP_DATA = /var/snap/code/103
 # environment
 VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 8:46685
+JOURNAL_STREAM = 8:48959
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -75,9 +73,9 @@ XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/d
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=2be1bc997034702cbf465e6a62ecf4cd
 # environment
-MANAGERPID = 1343
+MANAGERPID = 1281
 # environment
 LESSOPEN = | /usr/bin/lesspipe %s
 # environment
@@ -87,7 +85,7 @@ VSCODE_CWD = /home/wso2/Desktop/Police-Check-Api
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/102/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/103/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
@@ -95,17 +93,17 @@ PATH = /usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/harshas:@/tmp/.ICE-unix/2155,unix/harshas:/tmp/.ICE-unix/2155
+SESSION_MANAGER = local/harshas:@/tmp/.ICE-unix/2345,unix/harshas:/tmp/.ICE-unix/2345
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 GDK_PIXBUF_MODULE_FILE = /home/wso2/snap/code/common/.cache/gdk-pixbuf-loaders.cache
 # environment
-SNAP = /snap/code/102
+SNAP = /snap/code/103
 # environment
 GOPATH = /home/wso2/go
 # environment
-SNAP_VERSION = 3b889b09
+SNAP_VERSION = da76f933
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -113,9 +111,9 @@ DISABLE_WAYLAND = 1
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = afb6f887634d449792d36ddb2d892c20
+INVOCATION_ID = 5ea5570269c749efbca81f5a2f5ac4b2
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/102/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/103/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -135,7 +133,7 @@ PWD = /home/wso2/Desktop/Police-Check-Api
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2115
+SSH_AGENT_PID = 2305
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -149,7 +147,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/wso2/.config/Code/CachedData/3b889b090b5ad5793f524b5d1d39fda662b96a2a
+VSCODE_CODE_CACHE_PATH = /home/wso2/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
 # environment
 LOGNAME = wso2
 # environment
@@ -183,7 +181,7 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SNAP_USER_DATA = /home/wso2/snap/code/102
+SNAP_USER_DATA = /home/wso2/snap/code/103
 # environment
 SHLVL = 1
 # environment
@@ -193,7 +191,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = wso2
 # environment
-SNAP_REVISION = 102
+SNAP_REVISION = 103
 # environment
 LC_MONETARY = si_LK
 # makefile
@@ -213,7 +211,7 @@ MAKE_COMMAND := make
 # automatic
 *F = $(notdir $*)
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-07b9c5d7-1.69.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-07b9c5d7-1.70.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -226,8 +224,6 @@ MFLAGS = -pqrR
 GDK_BACKEND = x11
 # environment
 LC_PAPER = si_LK
-# environment
-LC_IDENTIFICATION = si_LK
 # environment
 QT_ACCESSIBILITY = 1
 # default
@@ -245,13 +241,13 @@ SNAP_NAME = code
 # environment
 LC_ALL = C
 # environment
-GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+DBUS_STARTER_BUS_TYPE = session
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/f2cb61cf_a7eb_4617_8202_08c98a0322d0
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/60a2b40d_4844_4ebb_8bbe_032f28731c50
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.604
+GNOME_TERMINAL_SERVICE = :1.92
 # default
 SUFFIXES := 
 # environment
@@ -263,7 +259,7 @@ WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-GJS_DEBUG_OUTPUT = stderr
+LC_IDENTIFICATION = si_LK
 # default
 .RECIPEPREFIX := 
 # environment
@@ -273,9 +269,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 156315
+VSCODE_PID = 66536
+# environment
+DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=2be1bc997034702cbf465e6a62ecf4cd
 # variable set hash-table stats:
-# Load=131/1024=13%, Rehash=0, Collisions=21/156=13%
+# Load=131/1024=13%, Rehash=0, Collisions=20/156=13%
 
 # Pattern-specific Variable Values
 
@@ -283,12 +281,11 @@ VSCODE_PID = 156315
 
 # Directories
 
-# . (device 64769, inode 13500857): 11 files, no impossibilities.
+# . (device 64769, inode 13500857): 16 files, no impossibilities.
 
-# 11 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
- 
 
 # No implicit rules.
 
@@ -300,6 +297,9 @@ postgres:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
+ 
+make: *** No rule to make target 'all'.  Stop.
+
 	docker run --name policedb -p 5002:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
 
 # Not a target:
@@ -382,12 +382,12 @@ migratedown:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 24 / storage = 186 B / avg = 7 B
-# current buf: size = 8162 B / used = 186 B / count = 24 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 29 / storage = 231 B / avg = 7 B
+# current buf: size = 8162 B / used = 231 B / count = 29 / avg = 7 B
 
-# strcache performance: lookups = 42 / hit rate = 42%
+# strcache performance: lookups = 47 / hit rate = 38%
 # hash-table stats:
-# Load=24/8192=0%, Rehash=0, Collisions=1/42=2%
-# Finished Make data base on Thu Aug  4 08:11:40 2022
+# Load=29/8192=0%, Rehash=0, Collisions=1/47=2%
+# Finished Make data base on Sat Aug  6 20:02:01 2022
 
  

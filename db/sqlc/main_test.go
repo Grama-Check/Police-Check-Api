@@ -11,7 +11,7 @@ import (
 
 const (
 	dbDriver = "postgres"
-	dbSource = "postgresql://root:secret@localhost:5002/police_db?sslmode=disable"
+	dbSource = "postgresql://policeadmin:pcheck@123@policecheckserver.postgres.database.azure.com/police_db?sslmode=require"
 )
 
 var testQueries *Queries
