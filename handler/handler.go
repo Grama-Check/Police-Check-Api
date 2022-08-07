@@ -11,6 +11,7 @@ import (
 	"Police-Check-Api/util"
 
 	"github.com/gin-gonic/gin"
+	_ "github.com/lib/pq"
 )
 
 var config util.Config
@@ -18,19 +19,19 @@ var conn *sql.DB
 
 func init() {
 	var err error
-
 	config, err = util.LoadConfig(".")
-
 	if err != nil {
 		log.Fatal("Cannot load config")
 
 	}
 	conn, err = sql.Open(config.DBDriver, config.DBSource)
 
+	//conn, err := sql.Open(config.DBDriver, config.DBSource)
 	if err != nil {
 		log.Println("HELP")
 		return
 	}
+
 }
 
 func PoliceCheck(c *gin.Context) {

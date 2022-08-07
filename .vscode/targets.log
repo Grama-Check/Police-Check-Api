@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,212 +8,110 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Aug  6 20:02:01 2022
+# Make data base, printed on Sun Aug  7 14:07:38 2022
 
 # Variables
 
-# 'override' directive
-GNUMAKEFLAGS := 
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
 # environment
-DESKTOP_SESSION = ubuntu
+WSLENV = ELECTRON_RUN_AS_NODE/w:WT_SESSION::WT_PROFILE_ID
 # default
 .SHELLFLAGS := -c
-# environment
-XDG_SESSION_CLASS = user
-# environment
-SNAP_COMMON = /var/snap/code/common
-# environment
-XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
-# environment
-XAUTHORITY = /run/user/1000/gdm/Xauthority
-# environment
-GDMSESSION = ubuntu
-# environment
-XMODIFIERS = @im=ibus
+# automatic
+@F = $(notdir $@)
 # makefile
-CURDIR := /home/wso2/Desktop/Police-Check-Api
+CURDIR := /home/jhivanb/code/Police-Check-Api
 # makefile
 SHELL = /bin/sh
 # environment
-SNAP_DATA = /var/snap/code/103
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
-VTE_VERSION = 6003
+STARSHIP_SESSION_KEY = 1757530049322926
+# 'override' directive
+GNUMAKEFLAGS := 
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
-# environment
-JOURNAL_STREAM = 8:48959
-# environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
-# environment
-SNAP_INSTANCE_NAME = code
-# environment
-SNAP_ARCH = amd64
-# makefile (from 'Makefile', line 1)
-MAKEFILE_LIST :=  Makefile
-# environment
-JAVA_HOME = /usr/lib/jvm/java-8-openjdk-amd64
-# automatic
-@F = $(notdir $@)
-# environment
-IM_CONFIG_PHASE = 1
-# environment
-BALLERINA_HOME = /usr/lib/bal
-# environment
-USERNAME = wso2
-# environment
-MAKELEVEL := 0
-# environment
-XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+XDG_DATA_DIRS = /usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus,guid=2be1bc997034702cbf465e6a62ecf4cd
-# environment
-MANAGERPID = 1281
-# environment
-LESSOPEN = | /usr/bin/lesspipe %s
-# environment
-LC_NAME = si_LK
-# environment
-VSCODE_CWD = /home/wso2/Desktop/Police-Check-Api
+VSCODE_CWD = /mnt/c/Users/Jhiva/AppData/Local/Programs/Microsoft VS Code
 # environment
 GOPROXY = https://proxy.golang.org,direct
-# environment
-GSETTINGS_SCHEMA_DIR = /snap/code/103/usr/share/glib-2.0/schemas
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/wso2/.fzf/bin:/usr/lib/jvm/java-8-openjdk-amd64/bin
+PATH = /home/jhivanb/.vscode-server/bin/da76f93349a72022ca4670c1b84860304616aaa2/bin/remote-cli:/home/jhivanb/.pyenv/shims:/home/jhivanb/.local/share/nvm/v16.14.2/bin:/home/linuxbrew/.linuxbrew/bin:/usr/local/go/bin:/home/jhivanb/golib/bin:/home/jhivanb/workspace/bin:/home/jhivanb/.pyenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Users/Jhiva/AppData/Roaming/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/Git/cmd:/mnt/c/ProgramData/chocolatey/bin:/mnt/c/Program Files/Go/bin:/mnt/c/Program Files/PowerShell/7/:/mnt/c/Program Files/Ballerina/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/Jhiva/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Jhiva/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/Jhiva/.jdks/corretto-1.8.0_322/bin:/mnt/c/lib/flutter/bin:/mnt/c/tools/dart-sdk/bin:/mnt/c/Users/Jhiva/AppData/Roaming/Pub/Cache/bin:/mnt/c/Users/Jhiva/AppData/Local/Programs/oh-my-posh/bin:/mnt/c/Users/Jhiva/AppData/Local/gitkraken/bin:/mnt/c/Users/Jhiva/go/bin:/mnt/c/Users/Jhiva/AppData/Local/JetBrains/Toolbox/scripts:/snap/bin
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
 # environment
-GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
-# environment
-SESSION_MANAGER = local/harshas:@/tmp/.ICE-unix/2345,unix/harshas:/tmp/.ICE-unix/2345
-# environment
-XDG_RUNTIME_DIR = /run/user/1000
-# environment
-GDK_PIXBUF_MODULE_FILE = /home/wso2/snap/code/common/.cache/gdk-pixbuf-loaders.cache
-# environment
-SNAP = /snap/code/103
-# environment
-GOPATH = /home/wso2/go
-# environment
-SNAP_VERSION = da76f933
-# environment
-XDG_MENU_PREFIX = gnome-
-# environment
-DISABLE_WAYLAND = 1
+GOPATH = /home/jhivanb/golib
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 5ea5570269c749efbca81f5a2f5ac4b2
+PYENV_ROOT = /home/jhivanb/.pyenv
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/103/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f3e2857d-3a43-44d5-ba62-75cbcdd11cfe.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
-# environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
-# environment
-XDG_SESSION_DESKTOP = ubuntu
-# environment
-SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = :0
+nvm_current_version = v16.14.2
 # environment
-SNAP_INSTANCE_KEY = 
-# environment
-PWD = /home/wso2/Desktop/Police-Check-Api
+PWD = /home/jhivanb/code/Police-Check-Api
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 2305
+WSL_INTEROP = /run/WSL/1165_interop
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+WT_SESSION = f53b18ad-1894-4655-b4c6-eecb4144cbb8
 # environment
-GTK_MODULES = gail:atk-bridge
+GOMODCACHE = /home/jhivanb/golib/pkg/mod
 # environment
-GOMODCACHE = /home/wso2/go/pkg/mod
+PYENV_SHELL = fish
 # environment
-HOME = /home/wso2
+HOME = /home/jhivanb
 # environment
-LESSCLOSE = /usr/bin/lesspipe %s %s
-# environment
-VSCODE_CLI = 1
-# environment
-VSCODE_CODE_CACHE_PATH = /home/wso2/.config/Code/CachedData/da76f93349a72022ca4670c1b84860304616aaa2
-# environment
-LOGNAME = wso2
+LOGNAME = jhivanb
 # environment
 APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
-SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
-# environment
-SNAP_CONTEXT = huNXtTEqaE5mYwvCd1rKGTz2kgb6ggx7s0aK55q48oFGHiUcjfOp
-# automatic
-+F = $(notdir $+)
-# environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-SNAP_USER_COMMON = /home/wso2/snap/code/common
-# environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-LC_TIME = si_LK
-# environment
-SNAP_REAL_HOME = /home/wso2
-# environment
-COLORTERM = truecolor
+MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-QT_IM_MODULE = ibus
-# environment
-SNAP_USER_DATA = /home/wso2/snap/code/103
-# environment
 SHLVL = 1
-# environment
-GNOME_SHELL_SESSION_MODE = ubuntu
 # default
 MAKE_VERSION := 4.2.1
 # environment
-USER = wso2
-# environment
-SNAP_REVISION = 103
-# environment
-LC_MONETARY = si_LK
+USER = jhivanb
 # makefile
 .DEFAULT_GOAL := postgres
 # environment
-XDG_CURRENT_DESKTOP = Unity
-# environment
-GOROOT = /usr/local/go
+NAME = Code
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-LC_TELEPHONE = si_LK
+VSCODE_WSL_EXT_LOCATION = /mnt/c/Users/Jhiva/.vscode/extensions/ms-vscode-remote.remote-wsl-0.66.3
 # default
 MAKE_COMMAND := make
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
-# environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-07b9c5d7-1.70.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -220,60 +120,38 @@ MFLAGS = -pqrR
 *D = $(patsubst %/,%,$(dir $*))
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# automatic
++F = $(notdir $+)
 # environment
-GDK_BACKEND = x11
+VSCODE_HANDLES_SIGPIPE = true
 # environment
-LC_PAPER = si_LK
-# environment
-QT_ACCESSIBILITY = 1
+WT_PROFILE_ID = {07b52e3e-de2c-5db4-bd2d-ba144ed6c273}
 # default
 MAKEFILES := 
-# environment
-SNAP_COOKIE = huNXtTEqaE5mYwvCd1rKGTz2kgb6ggx7s0aK55q48oFGHiUcjfOp
-# environment
-LC_NUMERIC = si_LK
 # automatic
 <F = $(notdir $<)
 # environment
-LC_MEASUREMENT = si_LK
-# environment
-SNAP_NAME = code
-# environment
 LC_ALL = C
 # environment
-DBUS_STARTER_BUS_TYPE = session
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/60a2b40d_4844_4ebb_8bbe_032f28731c50
+HOSTTYPE = x86_64
 # automatic
 ^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.92
 # default
 SUFFIXES := 
-# environment
-SNAP_REEXEC = 
-# environment
-CHROME_DESKTOP = code-url-handler.desktop
-# environment
-WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# environment
-LC_IDENTIFICATION = si_LK
 # default
 .RECIPEPREFIX := 
-# environment
-LC_ADDRESS = si_LK
 # environment
 LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 66536
+WSL_DISTRO_NAME = Ubuntu-20.04
 # environment
-DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=2be1bc997034702cbf465e6a62ecf4cd
+STARSHIP_SHELL = fish
 # variable set hash-table stats:
-# Load=131/1024=13%, Rehash=0, Collisions=20/156=13%
+# Load=69/1024=7%, Rehash=0, Collisions=8/94=9%
 
 # Pattern-specific Variable Values
 
@@ -281,9 +159,9 @@ DBUS_STARTER_ADDRESS = unix:path=/run/user/1000/bus,guid=2be1bc997034702cbf465e6
 
 # Directories
 
-# . (device 64769, inode 13500857): 16 files, no impossibilities.
+# . (device 2096, inode 90406): 17 files, no impossibilities.
 
-# 16 files, no impossibilities in 1 directories.
+# 17 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -297,9 +175,6 @@ postgres:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 2):
- 
-make: *** No rule to make target 'all'.  Stop.
-
 	docker run --name policedb -p 5002:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:14-alpine
 
 # Not a target:
@@ -325,7 +200,7 @@ sqlc:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-04 08:11:25.378499733
+#  Last modified 2022-08-07 12:55:39.820267839
 #  File has been updated.
 #  Successfully updated.
 
@@ -364,7 +239,7 @@ migrateup:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 11):
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5002/police_db?sslmode=disable" -verbose up
+	migrate -path db/migration -database "postgresql://policeadmin:pcheck@123@policecheckserver.postgres.database.azure.com/police_db?sslmode=require" -verbose up
 
 migratedown:
 #  Phony target (prerequisite of .PHONY).
@@ -372,7 +247,7 @@ migratedown:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 14):
-	migrate -path db/migration -database "postgresql://root:secret@localhost:5002/police_db?sslmode=disable" -verbose down
+	migrate -path db/migration -database "postgresql://policeadmin:pcheck@123@policecheckserver.postgres.database.azure.com/police_db?sslmode=require" -verbose down
 
 # files hash-table stats:
 # Load=12/1024=1%, Rehash=0, Collisions=0/28=0%
@@ -382,12 +257,12 @@ migratedown:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 29 / storage = 231 B / avg = 7 B
-# current buf: size = 8162 B / used = 231 B / count = 29 / avg = 7 B
+# strcache buffers: 1 (0) / strings = 30 / storage = 242 B / avg = 8 B
+# current buf: size = 8162 B / used = 242 B / count = 30 / avg = 8 B
 
-# strcache performance: lookups = 47 / hit rate = 38%
+# strcache performance: lookups = 48 / hit rate = 37%
 # hash-table stats:
-# Load=29/8192=0%, Rehash=0, Collisions=1/47=2%
-# Finished Make data base on Sat Aug  6 20:02:01 2022
+# Load=30/8192=0%, Rehash=0, Collisions=1/48=2%
+# Finished Make data base on Sun Aug  7 14:07:38 2022
 
  
