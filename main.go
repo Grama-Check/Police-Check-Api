@@ -9,7 +9,6 @@ import (
 
 func main() {
 	r := gin.Default()
-
 	authGroup := r.Group("/").Use(middleware.AuthMiddleware())
 
 	authGroup.POST("/", handler.PoliceCheck)
