@@ -56,4 +56,4 @@ jobs:
             az containerapp registry set -n police-check -g asgardeo-intern-project --server gramacheckservices.azurecr.io --username  ${{ secrets.POLICECHECK_REGISTRY_USERNAME }} --password ${{ secrets.POLICECHECK_REGISTRY_PASSWORD }}
             num=${{ github.event.release.tag_name }}
             suffix=$(echo $num | sed 's/\./\-/g')
-            az containerapp update -n police-check -g asgardeo-intern-project --revision-suffix $suffix --image gramacheckservices.azurecr.io/gramacheck/police-check:${{ github.sha }}
+            az containerapp update -n police-check -g asgardeo-intern-project --revision-suffix $suffix --image gramacheckservices.azurecr.io/gramacheck/police-check:${{ github.event.release.tag_name }}
